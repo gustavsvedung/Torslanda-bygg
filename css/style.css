@@ -1,0 +1,70 @@
+/* FLEXBOX PROPERTIES */
+
+.site {
+    display: flex; 
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.site-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+/* DESIGN */
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffe6;
+    background: #206020;
+    margin: 0;
+    padding-top: 0.5em;
+    margin-bottom: -0.5em;
+    height: 70px;
+}
+
+nav ul {
+    font-size: 1.5em;
+    background: #ffffcc;
+    height: 2em;
+    align-items: center;
+}
+
+a.navlink {
+    color: #00802b;
+}
+
+.site-content {
+    padding-left: 1.7em;
+    padding-right: 1.7em;
+}
+
+img {
+    width: 100%;    
+    border-style: solid;
+    border-width: 0.1em;
+    border-color: #666;
+}
+
+section {
+    margin-bottom: 3em;
+}
+
+footer {
+    background: lightsteelblue;
+    text-align: center;
+}
