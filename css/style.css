@@ -112,7 +112,7 @@ footer {
 
 /* MEDIA QUERIES */
 
-@media only screen and (min-device-width : 768px) {
+@media only screen and (min-width : 768px) {
     
     /* HEADER & NAV */
    header {
@@ -188,7 +188,7 @@ footer {
     .omosscol {
         flex: 1 50%;
         /*padding-left: 1em;*/
-        padding-right: 2em;
+        padding-right: 1em;
     }
 
    h2 {
