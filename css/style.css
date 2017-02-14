@@ -85,6 +85,7 @@ h2 {
 
 h3 {
     margin-top: 2.2em;   
+    margin-bottom: -0.3em;
 }
 
 p {
@@ -117,9 +118,9 @@ footer {
    header {
         display: flex;
         flex-flow: row nowrap;
-        align-items: center;
         justify-content: space-between;
         background: #206020;
+        margin-bottom: 3em;
     }
 
     .logo {
@@ -142,8 +143,9 @@ footer {
     }
 
     .menuicon {
-        display: none;
-        visibility: hidden;
+        position: absolute !important;
+        top: -9999px !important;
+        left: -9999px !important;
     }
 
     .menulabel {
