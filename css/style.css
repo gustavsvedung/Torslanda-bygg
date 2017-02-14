@@ -50,10 +50,15 @@ a.sublogo {
 }
 
 nav ul {
-    font-size: 1.5em;
     background: #ffffcc;
+    font-size: 1.5em;
     height: 2em;
     align-items: center;
+}
+
+.menulabel {
+    display: none;
+    visibility: hidden;
 }
 
 a {
@@ -107,20 +112,43 @@ footer {
 @media only screen and (min-device-width : 768px) {
     
     /* HEADER & NAV */
-   /* header {
+   header {
         display: flex;
         flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
         background: #206020;
     }
 
-    .logo,
+    .logo {
+        margin-left: 3em;
+        text-align: left;
+    }
+
     nav {
-        flex: 1 50%;
+        align-self: flex-end;       
     }
 
     nav ul {
-    flex-direction: column;
-    }*/
+        background: transparent;
+    }
+
+    nav ul li {
+        margin-right: 0.5em;
+        background: #ffffcc;
+        height: 50px;
+    }
+
+    .menuicon {
+        display: none;
+        visibility: hidden;
+    }
+
+    .menulabel {
+        display: block;
+        visibility: visible;
+        font-size: 0.7em;
+    }
 
     /* EVERYTHING ELSE*/    
     .site-content {
