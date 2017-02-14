@@ -45,10 +45,6 @@ h1 {
     color: #ffffcc;
 }
 
-a.sublogo {
-    color: #ffffcc;
-}
-
 nav ul {
     background: #ffffcc;
     font-size: 1.5em;
@@ -69,6 +65,11 @@ a {
 
 a.navlink {
     color: #00802b;
+}
+
+a[href^="tel"]{
+    color:inherit;
+    text-decoration:none;
 }
 
 .site-content {
@@ -148,6 +149,8 @@ footer {
         display: block;
         visibility: visible;
         font-size: 0.7em;
+        padding-left: 0.5em; 
+        padding-right: 0.5em;
     }
 
     /* EVERYTHING ELSE*/    
