@@ -23,18 +23,26 @@ nav ul {
 body {
     font-family: 'Roboto', sans-serif;
     color: #333;
+    box-sizing: border-box;
 }
 
 .logo {
-    font-family: 'Raleway', sans-serif;
     text-align: center;
-    text-transform: uppercase;
     color: #ffffe6;
     background: #206020;
     margin: 0;
     padding-top: 0.5em;
-    margin-bottom: -0.5em;
-    height: 70px;
+    height: 95px;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: -0.2em;
+}
+
+.sublogo {
+    color: #ffffcc;
 }
 
 nav ul {
@@ -44,6 +52,12 @@ nav ul {
     align-items: center;
 }
 
+a {
+    text-decoration: none;
+    font-size: 0.95em;
+    color: #333;
+}
+
 a.navlink {
     color: #00802b;
 }
@@ -51,6 +65,20 @@ a.navlink {
 .site-content {
     padding-left: 1.7em;
     padding-right: 1.7em;
+}
+
+h2 {
+    text-align: center;
+    font-size: 1.4em;
+    font-family: 'Raleway', sans-serif;
+}
+
+h3 {
+    margin-top: 2.2em;   
+}
+
+p {
+    font-size: 0.95em;
 }
 
 img {
@@ -67,4 +95,77 @@ section {
 footer {
     background: lightsteelblue;
     text-align: center;
+    font-size: 0.8em;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-device-width : 768px) {
+    
+    /* HEADER & NAV */
+   /* header {
+        display: flex;
+        flex-flow: row nowrap;
+        background: #206020;
+    }
+
+    .logo,
+    nav {
+        flex: 1 50%;
+    }
+
+    nav ul {
+    flex-direction: column;
+    }*/
+
+    /* EVERYTHING ELSE*/    
+    .site-content {
+        flex-flow: row wrap;
+    }
+
+    section {
+        flex: 1 45%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    #topline {
+        flex: 1 100%;
+    }
+
+    #topline h2 {
+        text-align: center;
+    }
+
+   #markägare {
+        order: 1;
+    }
+
+    #omoss {
+        order: 2;
+        flex: 1 100%;
+        display: flex;
+    }
+
+    .omosscol {
+        flex: 1 50%;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+   h2 {
+       text-align: left;
+   }
+
+   #kontakt {
+       order: 2;
+   }
+    
+}
+
+@media only screen  and (min-width : 1024px) {
+    body {
+        background: lightgreen;
+    }
+    
 }
