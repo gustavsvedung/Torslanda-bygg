@@ -103,7 +103,8 @@ section {
 }
 
 footer {
-    background: lightsteelblue;
+    background: #206020;
+    color: #ffffcc;
     text-align: center;
     font-size: 0.8em;
 }
